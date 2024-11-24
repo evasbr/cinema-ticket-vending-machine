@@ -1,0 +1,59 @@
+* {
+    -purple-900: #1E1B4B;
+    -purple-600: #6366F1;
+    -white: #FFF;
+    -red: #D02A2A;
+    /*-fx-text-fill: -white;*/
+    -fx-border-color: #aaa;
+}
+
+.background {
+    -fx-background-color: -purple-900;
+}
+
+.popupWrapper {
+    -fx-background-color: rgba(30, 27, 75, 0.4);
+    -fx-pref-width: 1280px;
+    -fx-pref-height: 833px;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: cyan;
+}
+
+.scroll-pane > .anchor-pane {
+    -fx-background-color: red;
+}
+
+.popup {
+    /*-fx-background-color: -purple-900;*/
+    -fx-background-color: blue;
+    -fx-background-radius: 6pt;
+    -fx-background-insets: 1.5pt;
+    -fx-border-color: red;
+    -fx-border-width: 3pt;
+    -fx-border-radius: 6pt;
+}
+
+.keranjang {
+    -fx-pref-width: 740px;
+    -fx-pref-height: 571px;
+}
+
+.keranjangTitle {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.keranjangItem {
+    -fx-background-color: -purple-600;
+}
+
+.closeButton1 {
+    -fx-background-color: -red;
+    -fx-background-image: url("imgs/x_close.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-pref-width: 60px;
+    -fx-pref-height: 60px;
+}
