@@ -4,7 +4,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<Button fx:id="customButton" fx:controller="components.CustomButtonController" mnemonicParsing="false" onMouseEntered="#mouseHoverEnter" text="Button" textFill="RED" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Button fx:id="customButton" mnemonicParsing="false" onMouseEntered="#mouseHoverEnter" text="Button" textFill="RED" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="components.CustomButtonController">
    <font>
       <Font name="System Bold" size="17.0" />
    </font>

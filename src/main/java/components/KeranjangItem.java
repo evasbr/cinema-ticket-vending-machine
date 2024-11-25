@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.SplitPane;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.AnchorPane;
 import kelompok_6.bif.demo1.HelloApplication;
@@ -31,6 +32,27 @@ public class KeranjangItem extends SplitPane {
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
+
+        // Tambahkan handler di sini
+        closeBtn.setOnMouseEntered(this::mouseHover);
+        closeBtn.setOnMouseClicked(this::handleClose);
+        this.setMaxHeight(10);
+    }
+
+    private void handleClose(MouseEvent event) {
+        // Mendapatkan parent container
+        if (this.getParent() instanceof javafx.scene.layout.Pane parent) {
+            parent.getChildren().remove(this); // Hapus KeranjangItem dari parent
+        } else {
+            System.out.println("Parent tidak ditemukan atau bukan Pane!");
+        }
+    }
+
+
+    private void mouseHover(MouseEvent event) {
+        System.out.println("Mouse entered close button!");
+        closeBtn.setStyle("-fx-background-color: #FF0000;"); // Contoh: ganti warna tombol
+
     }
 
     public enum CardType {
