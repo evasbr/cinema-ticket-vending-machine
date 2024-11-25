@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="833.0" maxWidth="1280.0" prefHeight="833.0" prefWidth="1280.0" stylesheets="@mainStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelompok_6.bif.demo1.MainPage">
+   <children>
+      <VBox>
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="737.0" prefWidth="1280.0">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1280.0" style="-fx-background-color: red;">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefWidth="1280.0" spacing="60.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="54.0" prefWidth="1174.0">
+                                 <children>
+                                    <Label text="Cinema Ticket Vending Machine">
+                                       <font>
+                                          <Font name="System Bold" size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Pilih tiket bioskop yang ingin dipesan kemudian lakukan checkout">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" maxWidth="1058.0" prefHeight="184.0" prefWidth="1058.0" spacing="100.0">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="278.0" spacing="16.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="70.0" prefWidth="70.0" text="1">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="TOP_CENTER" minHeight="96.0" prefHeight="96.0" prefWidth="277.0" text="Ketuk sekali film, pilih waktu, tempat duduk, klik masukkan keranjang" textAlignment="CENTER" wrapText="true">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="278.0" spacing="16.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="70.0" prefWidth="70.0" text="2">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="TOP_CENTER" minHeight="96.0" prefHeight="96.0" prefWidth="277.0" text="Klik checkout untuk mendapat QR code transaksi" textAlignment="CENTER" wrapText="true">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="278.0" spacing="16.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="70.0" prefWidth="70.0" text="3">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="TOP_CENTER" minHeight="96.0" prefHeight="96.0" prefWidth="277.0" text="Bayar menggunakan Qris dan ambil tiket yang dicetak." textAlignment="CENTER" wrapText="true">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <VBox alignment="CENTER">
+                                 <children>
+                                    <Label text="Film Tayang">
+                                       <font>
+                                          <Font name="System Bold" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <FlowPane fx:id="filmGrid" alignment="CENTER" hgap="45.0" prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" prefHeight="560.0" prefWidth="360.0" text="Button" />
+                                          <Button mnemonicParsing="false" prefHeight="560.0" prefWidth="360.0" text="Button" />
+                                          <Button mnemonicParsing="false" prefHeight="560.0" prefWidth="360.0" text="Button" />
+                                          <Button mnemonicParsing="false" prefHeight="560.0" prefWidth="360.0" text="Button" />
+                                       </children>
+                                    </FlowPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="35.0" left="52.0" right="52.0" top="35.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="380.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="72.0" prefWidth="436.0" spacing="24.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="184.0" text="Keranjang">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <VBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="212.0">
+                           <children>
+                              <Label text="Total :">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Rp 150.000,00">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" prefHeight="64.0" prefWidth="400.0" text="Checkout">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
