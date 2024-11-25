@@ -17,7 +17,7 @@
          <children>
             <ScrollPane hbarPolicy="NEVER" prefHeight="737.0" prefWidth="1280.0">
                <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1280.0" style="-fx-background-color: red;">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="1280.0">
                      <children>
                         <VBox alignment="TOP_CENTER" prefWidth="1280.0" spacing="60.0">
                            <children>
@@ -88,8 +88,9 @@
                                           <Font name="System Bold" size="30.0" />
                                        </font>
                                     </Label>
-                                    <FlowPane fx:id="filmGrid" alignment="CENTER" hgap="45.0" prefHeight="200.0" prefWidth="200.0">
+                                    <FlowPane fx:id="filmGrid" alignment="CENTER" hgap="45.0" prefHeight="200.0" prefWidth="200.0" vgap="45.0">
                                        <children>
+                                          <Button mnemonicParsing="false" prefHeight="560.0" prefWidth="360.0" text="Button" />
                                           <Button mnemonicParsing="false" prefHeight="560.0" prefWidth="360.0" text="Button" />
                                           <Button mnemonicParsing="false" prefHeight="560.0" prefWidth="360.0" text="Button" />
                                           <Button mnemonicParsing="false" prefHeight="560.0" prefWidth="360.0" text="Button" />
